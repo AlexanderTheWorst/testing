@@ -1,0 +1,17 @@
+/*
+    iPad Pro
+*/
+@media (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+}
+
+/*
+    Samsung Galaxy S20 Ultra
+*/
+@media (max-width: 412px) {
+    body {
+        background-color: green;
+    }
+}

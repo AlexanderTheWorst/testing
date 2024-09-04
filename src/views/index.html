@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="static/base-css.css">
+    </head>
+    <body>
+        <script>
+            (async () => {
+                const thing = await fetch("/hey")
+                const json = await thing.json()
+                console.log(json)
+            })()
+        </script>
+    </body>
+</html>
