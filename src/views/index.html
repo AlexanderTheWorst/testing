@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="static/base-css.css">
-    </head>
-    <body>
-        <script>
-            (async () => {
-                const thing = await fetch("/hey")
-                const json = await thing.json()
-                console.log(json)
-            })()
-        </script>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="static/base-css.css" />
+    <link rel="stylesheet" href="static/page-statics/home/index.css" class="css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div id="container">
+        <!--
+        This is my header!
+    -->
+        <div id="header">
+            <!--
+          My header label
+      -->
+            <div id="header-label">
+                <button id="expand">
+                    <img src="static/images/menu.png" alt="menu" />
+                </button>
+                <h2 class="header">Yoo</h2>
+            </div>
+
+            <!--
+          Right side of the navbar.
+      -->
+            <div id="right-hand-side">
+                <div id="navbar" expanded="0">
+                    <ul>
+                        <li><a class="uppercase" href="#">Features</a></li>
+                        <li><a class="uppercase current" href="#">Home</a></li>
+                        <li><a id="navbar-user-info" class="secondary-color"></a></li>
+                    </ul>
+                </div>
+
+                <!--
+            The buttons
+        -->
+                <div id="buttons">
+                    <button class="custom-button-style-1" id="base-button-1">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        The content!
+    -->
+        <div id="content">
+            <div id="wrapper-1">
+
+                <div class="left">
+
+                    <div id="wrapper-item-1">
+                        <h3 style="color: white">A discord bot for you!</h3>
+                        <p>We don't bite I promise!</p>
+                        <div id="wrapper-1-buttons">
+                            <button class="custom-button-style-2 bg-red">Add the bot</button>
+                            <button class="custom-button-style-2 bg-purple">Features</button>
+                        </div>
+                    </div>
+
+                    <div id="wrapper-item-2">
+                        <ul>
+
+                            <li>
+                                <div class="list-item-count">
+                                    <p>1</p>
+                                </div>
+                                <div class="list-item-content">
+                                    <h2>Why use this bot?</h2>
+                                    <p>I aim to make it as helpful as possible so you can relax and enjoy the atmosphere
+                                        of your utopia.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="list-item-count">
+                                    <p>2</p>
+                                </div>
+                                <div class="list-item-content">
+                                    <h2>What you can expect from this bot.</h2>
+                                    <p>Nothing, jack shit, fuck all, NOTHING, nada, never.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="https://media.tenor.com/VeBQ7RXqA_IAAAAi/wumpus-wave.gif" alt="wave" style="
+                        aspect-ratio: 283/315;
+                        /* width: 100% !important; */
+                        /* height: clamp(100px, 100%, 400px); */
+                    ">
+                </div>
+            </div>
+
+            <script type="module" src="/static/base-js.js"></script>
+</body>
+
 </html>
